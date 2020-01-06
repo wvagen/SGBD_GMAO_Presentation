@@ -14,10 +14,9 @@ public class Manager5 : MonoBehaviour
         {
             frameCount++;
             myAnim.SetInteger("frameCount", frameCount);
-          if (frameCount >=3)  moveOnToNextScene();
         }
     }
-    void moveOnToNextScene()
+    public void moveOnToNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
