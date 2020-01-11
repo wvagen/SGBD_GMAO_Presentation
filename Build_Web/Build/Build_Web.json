@@ -1,0 +1,16 @@
+{
+"companyName": "Esprit",
+"productName": "SGBD_Gmao",
+"productVersion": "0.1",
+"dataUrl": "Build_Web.data.unityweb",
+"wasmCodeUrl": "Build_Web.wasm.code.unityweb",
+"wasmFrameworkUrl": "Build_Web.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#807979",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.1f1"
+}

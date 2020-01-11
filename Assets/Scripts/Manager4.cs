@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Manager4 : MonoBehaviour
 {
@@ -12,6 +13,16 @@ public class Manager4 : MonoBehaviour
     void Start()
     {
         StartCoroutine(scaleAllDevices());
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0)) moveOnToNextScene();
+    }
+
+    void moveOnToNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     IEnumerator scaleAllDevices()

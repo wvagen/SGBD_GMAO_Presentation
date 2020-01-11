@@ -23,7 +23,17 @@ public class ServerDotsLights : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) StartCoroutine(lightSomeDots());
+        if (Input.GetMouseButtonDown(0))
+        {
+            switch (Manager6.clickCount)
+            {
+                case 1: StartCoroutine(lightSomeDots()); break;
+                case 3: StartCoroutine(lightSomeDots()); break;
+                case 5: StartCoroutine(lightSomeDots()); break;
+                case 7: StartCoroutine(lightSomeDots()); break;
+                case 9: StartCoroutine(lightSomeDots()); break;
+            }
+        }
     }
 
     IEnumerator lightSomeDots()
